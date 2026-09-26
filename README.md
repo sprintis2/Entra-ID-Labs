@@ -325,10 +325,15 @@ First, create a new project in the Google Developers Console to obtain a client 
 
 
 
+**Step 2: Configuring Google federation in Microsoft Entra ID**
 
+1.	Select **External Identities**.
 
+2.	Select **All identity providers**, and then select the **Google** button.
 
+3.	Enter the client ID and client secret you obtained earlier. Select **Save**:
 
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20google%20federation%20in%20Microsoft%20Entra%20ID.png?raw=true)
 
 
 
