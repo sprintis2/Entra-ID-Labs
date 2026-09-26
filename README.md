@@ -231,6 +231,101 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
+# **Adding Guest Users to Directory**
+
+1.	Select **Identity**.
+
+2.	Under **Users**, select **All Users**.
+
+3.	Select **New user** - **Invite external user**.
+
+4.	On the New user page, select **Invite user** and then add your information as the guest user. When complete, select **Invite**.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Inviting%20an%20external%20User.png?raw=true)
+
+
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/New%20External%20user%20invited%20as%20guest.png?raw=true)
+
+
+
+**Inviting Guest Users (Bulk)**
+
+1.	In the navigation pane, select **Identity**.
+
+2.	Under **Users**, select **All Users**, then select **Bulk operations** - **Bulk invite**.
+
+3.	In the Bulk invite users pane, select **Download** to a sample CSV template with invitation properties.
+
+4.	Using an editor to view the CSV file, review the template.
+
+5.	Open the .csv template and add a line for each guest user. Save the file.
+
+6.	On the Bulk invite users page, under **Upload your csv file**, browse to the file. When you select the file, validation of the .csv file starts.
+
+7.	After the file contents are validated, you'll see **File uploaded successfully**. If there are errors, you must fix them before you can submit the job.
+
+8.	When your file passes validation, select **Submit** to start the Azure bulk operation that adds the invitations.
+
+9.	To view the job status, select **view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Invite%20Guest%20Users%20Bulk.png?raw=true)
+
+
+
+# **Exploring Dynamic Goups**
+
+1.	Under **Groups**, select **All Groups**, and then select **New group**.
+
+2.	On the New Group page, under **Group type**, select **Security**.
+
+3.	In the **Group name **box, enter **All company users dynamic group**.
+
+4.	Select the **Membership type** menu and then select **Dynamic User**.
+
+5.	Under **Dynamic user members**, select **Add dynamic query**.
+
+6.	On the right above the **Rule syntax** box, select **Edit**.
+
+7.	In the Edit rule syntax pane, enter the following expression in the **Rule syntax** box: user.objectId -ne null
+
+8.	Select **OK**. The rule appears in the Rule syntax box.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Dynamic%20Membership%20rules.png?raw=true)
+
+
+
+# **Configuring an Identity Provider (Google)**
+
+Step 1: Configure a Google developer project
+
+First, create a new project in the Google Developers Console to obtain a client ID and a client secret that you can later add to Microsoft Entra ID.
+
+1.	Go to the Google APIs at https://console.developers.google.com, and sign in with Google account.
+
+2.	Accept the terms of service if prompted.
+
+3.	Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Microsoft Entra B2B**), and then select **Create**:
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20Google%20Project%20for%20Federation.png?raw=true)
+
+
+
+4.	On the **APIs and Services** page, select **View** under your new project. Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**. Select **External**, and then select **Create**. On the **OAuth consent screen**, enter an **Application name**
+
+5.	 Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**
+
+6.	Under **Application type**, select **Web application**. Give the application a suitable name, like **Microsoft Entra B2B**. Under **Authorized redirect URIs**, enter the following URIs:
+
+•	**https://login.microsoftonline.com**
+
+•	**https://login.microsoftonline.com/te/ tenant ID /oauth2/authresp (where tenant ID is the tenant ID in Azure)**
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/OAuth%20Client%20Created.png?raw=true)
+
+
+
+
 
 
 
