@@ -16,14 +16,44 @@
 
 | Setting | Value |
 | --- | --- |
-| User principal name | CKBam |
-| Mail nickname | CKBam |
-| Display name | Bam Alexander |
-| Password | (your assigned password) |
+| **User principal name**: | CKBam |
+| **Mail nickname**: | CKBam |
+| **Display name**: | Bam Alexander |
+| **Password**: | (Assigned password) |
 
 5. Select **Create** to register the user in your organization.
 
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20a%20User%20(Entra%20ID).png?raw=true)
+
+
+
+**Removing Users From Microsoft Entra ID**
+
+1.	Navigate to the Microsoft Entra admin center. In the left navigation, under Identity, select **Users**
+
+2.	In the **Users** list, select the check box for a user to delete. For example (**Tre Steward**.)
+
+3.	With the user account selected, on the menu, select **Delete user**.
+
+4.	Review the dialog box and then select **OK**.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Removing%20a%20User.png?raw=true)
+
+
+
+**Restoring Deleted User**
+
+1.	In the Users page, in the left navigation, select **Deleted users**.
+
+2.	Review the list of deleted users and select the user you deleted.
+
+3.	On the menu, select **Restore user**. 
+
+4.	Review the dialog box and then select **OK**.
+
+5.	In the left navigation, select **All users**. Verify User was restored
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Restoring%20Deleted%20User.png?raw=true)
 
 
 
@@ -93,10 +123,111 @@ You can see the list of permissions in the description of each role. To open, la
 
 4.	Select **Save** to update the tenant properties.
 
+ # **Creating a Security Group**
+
+1.	Browse the Microsoft Entra admin center screen.
+
+2.	In the left navigation, under **Identity**, select **Groups** and then **All groups**.
+
+3.	In the Groups screen, on the menu, select **New group**.
+
+4.	Create a group using the following information:
+
+| Setting | Value |
+| --- | --- |
+| **Group type:** | Security |
+| **Group name:** | Marketing |
+| **Membership type:** | Assigned |
+| **Owners:** | Admin account |
+| **Members:** | Bam Alexander |
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20a%20Security%20Group.png?raw=true)
 
 
 
+# **Creating a Microsoft 365 group in Microsoft Entra ID**
 
+1.	In the left navigation, under **Identity**, select **Groups**.
+
+2.	In the Groups page, on the menu, select **New group**.
+
+3.	Create a group using the following information:
+
+| Setting | Value |
+| --- | --- |
+| Group type | Microsoft 365 |
+| Group name | CountyKid Sales |
+| Membership type | Assigned |
+| Owners | Your admin account |
+| Members | Assigned member |
+
+4.	When complete, verify the group named CountyKid Sales is shown in the All groups list. 
+
+ ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20Microsoft%20365%20group.png?raw=true)
+
+
+
+# **Assigning Group Licenses** 
+
+1.	Go to the Microsoft 365 admin center at https://admin.microsoft.com.
+
+2.	Select **Billing** from the menu on the left.
+
+3.	Select **Licenses**.
+
+4.	From the list of licenses you have available, select one.
+
+5.	Select **Groups** from the list near the top of the screen.
+
+6.	On the Groups page, select **+ Assign license**.
+
+7.	Search for and select the **Marketing** group you created earlier.
+
+8.	Select the **Assign** button at the bottom of the dialog.
+
+9.	You should get a message that licenses were successfully assigned.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Assigning%20a%20License%20to%20a%20Security%20Group.png?raw=true)
+
+
+
+# **Changing Group License Assignment**
+
+1.	In the left navigation, open **Groups**.
+
+2.	Select **All groups**, then select one of the available groups.
+
+3.	In the left navigation, under **Manage**, select **Licenses**.
+
+4.	Review the current assignments and then, on the menu, select **+ Assignments**.
+
+5.	Open https://admin.microsoft.com to open the Microsoft 365 admin center.
+
+6.	Select **Billing**. Then select **Licenses**.
+
+7.	Select an available license from the list.
+
+8.	Select **Groups** from the menu near the top of the page.
+
+9.	Select the **+ Assign licenses** option.
+
+10.	Pick the group you were looking at earlier in Microsoft Entra. Then select the **Assign** button at the bottom of the page.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Chaange%20group%20license%20assignment.png?raw=true)
+
+
+
+# **Configuring External Collaboration Settings**
+
+1.	Select **Identity**.
+
+2.	Select **External Identities** - **External collaboration settings**.
+
+3.	Under **Guest user access**, review access levels that are available and then select Guest **user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
+
+4.	Under **Guest invite settings**, mark **Only user assigned to specific admin roles can invite guest users**.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20external%20collaboration%20settings.png?raw=true)
 
 
 
