@@ -25,6 +25,10 @@
 
 
 
+!{image alt}(https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20a%20User%20(Entra%20ID).png?raw=true)
+
+
+
 
 
 
