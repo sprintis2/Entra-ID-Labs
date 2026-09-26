@@ -67,26 +67,31 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
+# **Configuring The External User Options**
+
+ ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20external%20collaboration%20settings.png?raw=true)
 
 
 
+•	**Guest user access** – Configured Guest User access to the most restrictive setting, “restricted to properties and memberships of their own directory objects.”
+
+•	**Guest invite settings** – Configured Guest invite settings to “Member users and users assigned to specific admin roles can invite guest users including guests with member permissions.”
+
+•	**Guest self-service up**– Disabled guest self-service sign up via user flows.
+
+# **Setting Tenant Wide Properties**
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Setting%20Tenant%20Wide%20Properties.png?raw=true)
 
 
 
+1.	Select the **Show portal menu** hamburger icon and then select **Microsoft Entra ID**
 
+2.	In the left navigation, in the Manage section, select **Properties**.
 
+3.	In the **Name** box, the tenant name was changed from Default Directory to “CountyKids”.
 
-
-
-
-
-
-
-
-
-
-
-
+4.	Select **Save** to update the tenant properties.
 
 
 
