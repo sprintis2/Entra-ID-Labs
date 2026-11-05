@@ -305,7 +305,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 4.	Under **Configure**, select **Additional cloud-based multifactor authentication settings**. On the resulting page, you can see all the MFA options for Azure under **Service Settings**.
 
-
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20Multifactor%20Authenticaiton%20options.png)
 
 
 
@@ -315,7 +315,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 # **Configuring an Identity Provider (Google)**
 
-Step 1: Configure a Google developer project
+**Step 1: Configure a Google developer project**
 
 First, create a new project in the Google Developers Console to obtain a client ID and a client secret that you can later add to Microsoft Entra ID.
 
