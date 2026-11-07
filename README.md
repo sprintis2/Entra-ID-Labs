@@ -324,7 +324,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 6.	Under “Assignments” look for “Target resources”, select “No target resources selected”. Under “Include”, choose “Select resources”. Under “Select Specific Resources”, choose “None”. Select apps from the options on the right and then choose Select.
 
-
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Conditional%20Access%20(setting%20apps).png)
 
 
 
