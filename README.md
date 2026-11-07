@@ -308,6 +308,25 @@ You can see the list of permissions in the description of each role. To open, la
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20Multifactor%20Authenticaiton%20options.png)
 
 
+**Set up Conditional Access rules for MFA**
+
+1.	Switch back to the Azure portal and select **Microsoft Entra ID** > **Manage**>**Security** >**Protect**> **Conditional Access**.
+
+2.	Select “**Create new policy**” from the top menu.
+
+3.	Name policy “All Guests”
+
+4.	Under “**Assignments**” look for “**Users**” and select “**0 users and groups selected**”
+
+5.	Under “**Include**”, choose “**Select users and groups**”. Select from list of users and groups and then choose “**Select**.” 
+
+
+
+
+
+
+
+
 
 
 
