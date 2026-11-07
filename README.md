@@ -328,7 +328,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-
+7.	Under “Conditions”, select “0 conditions selected”. Under “Locations”, select “Not configured”. Under Configure, select Yes, then select “Any location”
 
 
 
