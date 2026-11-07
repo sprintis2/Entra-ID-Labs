@@ -328,9 +328,15 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-7.	Under “Conditions”, select “0 conditions selected”. Under “Locations”, select “Not configured”. Under Configure, select Yes, then select “Any location”
+7.	Under “**Conditions**”, select “**0 conditions selected**”. Under “**Locations**”, select “**Not configured**”. Under Configure, select Yes, then select “**Any location**”
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Conditional%20Access%20(setting%20location%20condition).png)
 
 
+
+8.	Under “**Grant**”, select “**0 controls selected**”. Make sure that “**Grant access**” is selected. Select “**Require multifactor authentication**” and choose “**Select**”. This option enforces MFA.
+
+9.	Set Enable policy to On, then select “**Create**”
 
 # **Configuring an Identity Provider (Google)**
 
