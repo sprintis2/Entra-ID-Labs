@@ -372,7 +372,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Sign%20In%20Frequency%20Access%20Policy.png)
 
-
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Sign%20In%20Frequency%20Access%20Policy%202.png)
 
 # **Enable FIDO2 Security Key Method**
 1.	Sign into the Microsoft Entra admin center.
