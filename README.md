@@ -310,33 +310,33 @@ You can see the list of permissions in the description of each role. To open, la
 
 # **Setting Conditional Access Rules For MFA**
 
-1.	Switch back to the Azure portal and select **Microsoft Entra ID** > **Manage**>**Security** >**Protect**> **Conditional Access**.
+1.	Switch back to the Azure portal and select **Microsoft Entra ID**>**Manage**>**Security**>**Protect**>**Conditional Access**.
 
-2.	Select “**Create new policy**” from the top menu.
+2.	Select **Create new policy** from the top menu.
 
-3.	Name policy “All Guests”
+3.	Name policy **All Guests**
 
-4.	Under “**Assignments**” look for “**Users**” and select “**0 users and groups selected**”
+4.	Under **Assignments** look for **Users** and select **0 users and groups selected**
 
-5.	Under “**Include**”, choose “**Select users and groups**”. Select from list of users and groups and then choose “**Select**.” 
+5.	Under **Include**, choose **Select users and groups**. Select from list of users and groups and then choose “**Select**.” 
 
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Conditional%20Access%20(user%20assignment).png)
 
-6.	Under “**Assignments**” look for “**Target resources**”, select “**No target resources selected**”. Under “**Include**”, choose “**Select resources**”. Under “**Select Specific Resources**”, choose “**None**”. Select apps from the options on the right and then choose **Select**.
+6.	Under **Assignments** look for **Target resources**, select **No target resources selected**. Under **Include**, choose **Select resources**. Under **Select Specific Resources**, choose **None**. Select apps from the options on the right and then choose **Select**.
 
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Conditional%20Access%20(setting%20apps).png)
 
 
 
-7.	Under “**Conditions**”, select “**0 conditions selected**”. Under “**Locations**”, select “**Not configured**”. Under Configure, select Yes, then select “**Any location**”
+7.	Under **Conditions**, select **0 conditions selected**. Under **Locations**, select **Not configured**. Under Configure, select Yes, then select **Any location**
 
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Conditional%20Access%20(setting%20location%20condition).png)
 
 
 
-8.	Under “**Grant**”, select “**0 controls selected**”. Make sure that “**Grant access**” is selected. Select “**Require multifactor authentication**” and choose “**Select**”. This option enforces MFA.
+8.	Under **Grant**, select **0 controls selected**. Make sure that **Grant access** is selected. Select **Require multifactor authentication** and choose **Select**. This option enforces MFA.
 
-9.	Set Enable policy to On, then select “**Create**”
+9.	Set Enable policy to On, then select **Create**
 
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Conditional%20Access%20(setting%20grant%20access%20control).png)
 
@@ -344,21 +344,21 @@ You can see the list of permissions in the description of each role. To open, la
 
 # **Configure Authentication Session Controls**
 
-1.	 Navigate to **Microsoft Entra ID** >**Manage**>**Security**>**Protect**> **Conditional Access**.
+1.	 Navigate to **Microsoft Entra ID**>**Manage**>**Security**>**Protect**>**Conditional Access**.
 
-2.	Select “**Create new policy**” from the top menu.
+2.	Select **Create new policy** from the top menu.
 
-3.	In the Name box, enter “**Sign in frequency**”.
+3.	In the Name box, enter **Sign in frequency**.
 
-4.	Under **Assignments**, select “**Users and groups**”.
+4.	Under **Assignments**, select **Users and groups**.
 
-5.	On the Include tab, select the “**users and groups**” check box.
+5.	On the Include tab, select the **users and groups** check box.
 
 6.	In the Select pane, select Admin account.
 
 7.	Select Target Resources.
 
-8.	On the Include tab, select “**Select resources**” and then “**Select Specific Resources**”
+8.	On the Include tab, select **Select resources** and then **Select Specific Resources**
 
 9.	In the Select pane, select **Office 365**.
 
@@ -379,7 +379,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 2.	Browse to **Security**>**Manage**>**Authentication methods**
 
-3.	Select the “**Passkey (FIDO2)**” built in method choose the following options:
+3.	Select the **Passkey (FIDO2)** built in method choose the following options:
   o	**Enable** - Yes or No
   o	**Target** - All users or Select users
 
@@ -393,22 +393,24 @@ You can see the list of permissions in the description of each role. To open, la
 
 1.	Navigate to Microsoft Entra ID and then select **Manage**>**Security**>**Manage**>**Authentication Methods**.
 
-3.	On Authentications methods menu, select “**Password protection**”.
+3.	On Authentications methods menu, select **Password protection**.
 
-4.	In the Password protection settings, in the “**Lockout duration in seconds**” box, set the value to 180.
+4.	In the Password protection settings, in the **Lockout duration in seconds** box, set the value to 180.
 
 5.	Next to **Mode**, select **Enforced** and save changes.
 
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Password%20Protection%20rules.png)
 
 
 
+# **Enable Self-Service Password Reset**
 
+1.	Navigate to Microsoft Entra ID, then select **Manage**>**Password Reset** from the menu on the left side.
 
+2.	Select the Properties tab, under the option **Self-service password reset**, pick **Select Group**
 
-Enable self-service password reset
-1.	Navigate to Microsoft Entra ID, then select “Manage”>“Password Reset” from the menu on the left side.
-2.	Select the Properties tab, under the option “Self-service password reset”, pick “Select Group”
-3.	Browse for and select SSPR-Test-Group, then choose Select.
+3.	Browse for and select **SSPR-Test-Group**, then choose **Select**.
+
 4.	To enable SSPR for the chosen group, select Save.
 
 
