@@ -439,9 +439,6 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-
-
-
 # **Enable sign-in risk policy**
 
 1.	On the Identity protection blade, in the left navigation, select Dashboard and then **Sign-in risk policy**.
@@ -456,10 +453,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 6.	Select the **Require multifactor authentication** check box and then select **Done**.
 
-
-
-
-
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/sign%20in%20risk%20policy.png)
 
 
 
