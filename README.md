@@ -655,9 +655,9 @@ this information in an access package's details.
 
 
 
-Add Catalog owners
+# **Add Catalog Owners**
 
-1.	In the Marketing catalog, in the left navigation menu, select **Roles and administrators.**
+1.	In the Marketing catalog, in the left navigation menu, select **Roles and administrators**.
 
 2.	On the top menu, review the available roles and then select **+Add Catalog owner**.
 
