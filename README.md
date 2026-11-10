@@ -230,6 +230,47 @@ You can see the list of permissions in the description of each role. To open, la
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20external%20collaboration%20settings.png?raw=true)
 
 
+# **Configuring An Identity Provider (Google)**
+
+**Step 1: Configure a Google developer project**
+
+First, create a new project in the Google Developers Console to obtain a client ID and a client secret that you can later add to Microsoft Entra ID.
+
+1.	Go to the Google APIs at https://console.developers.google.com, and sign in with Google account.
+
+2.	Accept the terms of service if prompted.
+
+3.	Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Microsoft Entra B2B**), and then select **Create**:
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20Google%20Project%20for%20Federation.png?raw=true)
+
+
+
+4.	On the **APIs and Services** page, select **View** under your new project. Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**. Select **External**, and then select **Create**. On the **OAuth consent screen**, enter an **Application name**
+
+5.	 Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**
+
+6.	Under **Application type**, select **Web application**. Give the application a suitable name, like **Microsoft Entra B2B**. Under **Authorized redirect URIs**, enter the following URIs:
+
+•	**https://login.microsoftonline.com**
+
+•	**https://login.microsoftonline.com/te/ tenant ID /oauth2/authresp (where tenant ID is the tenant ID in Azure)**
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/OAuth%20Client%20Created.png?raw=true)
+
+
+
+**Step 2: Configuring Google Federation In Microsoft Entra ID**
+
+1.	Select **External Identities**.
+
+2.	Select **All identity providers**, and then select the **Google** button.
+
+3.	Enter the client ID and client secret you obtained earlier. Select **Save**:
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20google%20federation%20in%20Microsoft%20Entra%20ID.png?raw=true)
+
+
 
 # **Adding Guest Users To Directory**
 
@@ -544,48 +585,6 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20Custom%20App%20Role%20-%20Copy.png)
-
-
-
-# **Configuring An Identity Provider (Google)**
-
-**Step 1: Configure a Google developer project**
-
-First, create a new project in the Google Developers Console to obtain a client ID and a client secret that you can later add to Microsoft Entra ID.
-
-1.	Go to the Google APIs at https://console.developers.google.com, and sign in with Google account.
-
-2.	Accept the terms of service if prompted.
-
-3.	Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Microsoft Entra B2B**), and then select **Create**:
-
-![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20Google%20Project%20for%20Federation.png?raw=true)
-
-
-
-4.	On the **APIs and Services** page, select **View** under your new project. Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**. Select **External**, and then select **Create**. On the **OAuth consent screen**, enter an **Application name**
-
-5.	 Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**
-
-6.	Under **Application type**, select **Web application**. Give the application a suitable name, like **Microsoft Entra B2B**. Under **Authorized redirect URIs**, enter the following URIs:
-
-•	**https://login.microsoftonline.com**
-
-•	**https://login.microsoftonline.com/te/ tenant ID /oauth2/authresp (where tenant ID is the tenant ID in Azure)**
-
-![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/OAuth%20Client%20Created.png?raw=true)
-
-
-
-**Step 2: Configuring Google Federation In Microsoft Entra ID**
-
-1.	Select **External Identities**.
-
-2.	Select **All identity providers**, and then select the **Google** button.
-
-3.	Enter the client ID and client secret you obtained earlier. Select **Save**:
-
-![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20google%20federation%20in%20Microsoft%20Entra%20ID.png?raw=true)
 
 
 
