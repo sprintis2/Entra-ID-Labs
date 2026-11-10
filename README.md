@@ -413,6 +413,27 @@ You can see the list of permissions in the description of each role. To open, la
 
 4.	To enable SSPR for the chosen group, select Save.
 
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Enabling%20Self-service%20password%20reset.png)
+
+
+
+# **Enable user risk policy**
+
+1.	Sign in to the Microsoft Entra admin center using a Global administrator account.
+
+2.	On the left hand side menu, select **ID Protection**.
+
+3.	On the ID Protection blade, select **Dashboard** and then **User Risk Policy**.
+
+4.	Under **Assignments**, select **All users**.
+
+5.	Under **User risk**, select **Low and above**.
+
+6.	In the User risk pane, select **High** and then select **Done**.
+
+7.	Under **Controls**, then **Access**, and then select **Block access**.
+
+8.	In the Access pane, select the **Require password change** check box and then select **Done**. 
 
 
 
@@ -420,6 +441,20 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
+
+# **Enable sign-in risk policy**
+
+1.	On the Identity protection blade, in the left navigation, select Dashboard and then **Sign-in risk policy**.
+
+2.	As with the User risk policy, the Sign-in risk policy can be assigned to users and groups and allows you to exclude users from the policy.
+
+3.	Under **Sign-in risk**, select **Medium and above**.
+
+4.	In the Sign-in risk pane, select **High** and then select **Done**.
+
+5.	Under **Controls**, then **Access**, and then select **Block access**.
+
+6.	Select the **Require multifactor authentication** check box and then select **Done**.
 
 
 
