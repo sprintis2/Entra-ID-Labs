@@ -492,7 +492,34 @@ You can see the list of permissions in the description of each role. To open, la
 
 4.	In the **Users and groups** pane, select your administrator account and then **Select**.
 
-5.	Select **Assign**. 
+5.	Select **Assign**.
+
+
+# **Create a custom role to manage app registration**
+
+1.	Sign in to the Microsoft Entra admin center.
+2.	On the  Entra ID menu select Roles and administrators.
+3.	On the Roles and administrators screen, on the menu, select New custom role.
+4.	In the New custom role dialog, on the Basics tab, in the name box, enter My custom app role.
+5.	Review the remaining options and then select Next.
+6.	On the Permissions tab, review the available permissions.
+7.	In the Search by permission name or description box, enter credentials.
+8.	In the results, select the “Read password single sign on credentials on service principals,” and “Manage application provisioning secrets and credentials” permissions and then select Next.
+9.	Review the changes and then select Create.
+
+
+Add app roles to an application
+1.	On the GitHub Enterprise Cloud – Enterprise Account screen, on the Overview page, under Manage, select App Roles and then Create app role.
+2.	In the Create app role pane, in the Display name box, enter Survey Writer.
+3.	Under Allow member types, select User/Groups.
+4.	In the Value box, enter Survey.Create.
+5.	In the Description box, enter Writers can create surveys.
+6.	Notice that the description is a mandatory field.
+7.	Verify the Do you want to enable this app role is selected and then select Apply.
+
+
+
+
 
 # **Configuring An Identity Provider (Google)**
 
