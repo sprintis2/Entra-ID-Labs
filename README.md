@@ -370,7 +370,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 13.	Under Enable policy, select **Report-only**, and then select Create.
 
-
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Sign%20In%20Frequency%20Access%20Policy.png)
 
 
 
