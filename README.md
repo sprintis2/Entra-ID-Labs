@@ -295,6 +295,18 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
+# **Configure Microsoft Entra Multifactor Authentication Registration Policy**
+
+1.	On the Identity protection blade, in the left navigation, select Dashboard and then **Multifactor authentication registration policy**.
+
+2.	Under **Assignments**, select **All users**.
+
+3.	Under Controls, **Require Microsoft Entra ID multifactor authentication registration** is selected and cannot be changed.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/multifactor%20authentication%20registration%20policy.png)
+
+
+
 # **Configure Multifactor Authentication Option**
 
 1.	Search for **Microsoft Entra ID** and navigate to the Microsoft Entra ID dashboard.
