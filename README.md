@@ -584,48 +584,86 @@ First, create a new project in the Google Developers Console to obtain a client 
 
 
 
-Create access reviews for groups and apps
+# **Create Access Reviews For Groups & Apps**
+
 1.	Sign in to the Microsoft Entra admin center 
-2.	Browse to ID Governance > Access reviews.
-3.	Select New access review to create a new access review.
-4.	On the Access reviews template screen, select Review access to a resource type.
-5.	In the Select what to review box, select Teams + Groups.
-6.	Select the “select Teams + Groups” option and select groups.
-7.	Select “All Users” for the Scope.
-8.	Select Next: Reviews.
-9.	In the Select reviewers section, select “Group Owners” for First and Second Stage of Review
-10.	Select Settings, In the Upon completion settings, check the box for “Auto apply results to resource”
-11.	Select Next: Review + Create.
-12.	Review information and then select Create.
+
+2.	Browse to **ID Governance**>**Access reviews**.
+
+3.	Select **New access review** to create a new access review.
+
+4.	On the Access reviews template screen, select **Review access to a resource type**.
+
+5.	In the **Select what to review** box, select **Teams + Groups**.
+
+6.	Select the **select Teams + Groups** option and select groups.
+
+7.	Select **All Users** for the **Scope**.
+
+8.	Select **Next: Reviews**.
+
+9.	In the **Select reviewers** section, select **Group Owners** for First and Second Stage of Review
+
+10.	Select Settings, In the **Upon completion settings**, check the box for “Auto apply results to resource”
+
+11.	Select **Next: Review + Create**.
+
+12.	Review information and then select **Create**.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20Access%20Reviews%20for%20Groups%20and%20Apps%20-%20Copy.png)
 
 
 
-Create a catalog
-1.	From Microsoft Entra ID home screen, select ID Governance.
-2.	In the left menu, select Catalogs.
-3.	On the top menu, select +New Catalog.
-4.	In the New catalog pane, in the Name box, enter Marketing.
-5.	In the Description box, enter For marketing department users. Users will see this information in an access package's details.
-6.	Select Yes for enabled for users to request and enabled for external users to request.
-7.	Select Create.
+# **Create A Catalog**
+
+1.	From Microsoft Entra ID home screen, select **ID Governance**.
+
+2.	In the left menu, select **Catalogs**.
+
+3.	On the top menu, select **+New Catalog**.
+
+4.	In the New catalog pane, in the **Name** box, enter **Marketing**.
+
+5.	In the **Description** box, enter **For marketing department users**. Users will see
+this information in an access package's details.
+
+6.	Select **Yes** for enabled for users to request and enabled for external users to request.
+
+7.	Select **Create**.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/creating%20a%20catalog.png)
 
 
-Add resources to a catalog
-1.	On the Identity Governance screen, select Catalogs.
-2.	In the Catalogs list, select Marketing.
-3.	In the left navigation, under Manage, select Resources.
-4.	On the menu, select + Add resources.
+
+# **Add Resources To Catalog**
+
+1.	On the Identity Governance screen, select **Catalogs**.
+
+2.	In the **Catalogs** list, select **Marketing**.
+
+3.	In the left navigation, under **Manage**, select **Resources**.
+
+4.	On the menu, select **+Add resources**.
+
 5.	In the Add resources to catalog screen, review the available options.
-6.	Select the Groups and Teams category then select the Marketing Security Group from that category.
-7.	Select Add.
+
+6.	Select the **Groups and Teams** category then select the **Marketing** Security Group from that category.
+
+7.	Select **Add**.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Adding%20resources%20to%20Catalogs.png)
+
 
 
 Add Catalog owners
-1.	In the Marketing catalog, in the left navigation menu, select Roles and administrators
-2.	On the top menu, review the available roles and then select + Add Catalog owner.
-3.	In the Select members pane, select Tre Steward and then select Select.
 
+1.	In the Marketing catalog, in the left navigation menu, select **Roles and administrators.**
 
+2.	On the top menu, review the available roles and then select **+Add Catalog owner**.
+
+3.	In the Select members pane, select user **Tre Steward** and then select **Select**.
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Adding%20Catalog%20Owners.png)
 
 
 
