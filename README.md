@@ -538,7 +538,6 @@ First, create a new project in the Google Developers Console to obtain a client 
 
 5.	Select **Assign**.
 
-
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Assigning%20users%20to%20an%20App%20-%20Copy.png)
 
 
@@ -561,13 +560,12 @@ First, create a new project in the Google Developers Console to obtain a client 
 
 8.	Review the changes and then select **Create**.
 
-
-
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Custom%20role%20for%20app%20registraiton.png)
 
 
 
 # **Add App Roles To An Application**
+
 1.	On the **GitHub Enterprise Cloud – Enterprise Account** screen, on the Overview page, under **Manage**, select **App Roles** and then **Create app role**.
 
 2.	In the Create app role pane, in the **Display name** box, enter **Survey Writer**.
@@ -582,12 +580,50 @@ First, create a new project in the Google Developers Console to obtain a client 
 
 7.	Verify the **Do you want to enable this app role** is selected and then select **Apply**.
 
-
-
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Creating%20Custom%20App%20Role%20-%20Copy.png)
 
 
 
+Create access reviews for groups and apps
+1.	Sign in to the Microsoft Entra admin center 
+2.	Browse to ID Governance > Access reviews.
+3.	Select New access review to create a new access review.
+4.	On the Access reviews template screen, select Review access to a resource type.
+5.	In the Select what to review box, select Teams + Groups.
+6.	Select the “select Teams + Groups” option and select groups.
+7.	Select “All Users” for the Scope.
+8.	Select Next: Reviews.
+9.	In the Select reviewers section, select “Group Owners” for First and Second Stage of Review
+10.	Select Settings, In the Upon completion settings, check the box for “Auto apply results to resource”
+11.	Select Next: Review + Create.
+12.	Review information and then select Create.
+
+
+
+Create a catalog
+1.	From Microsoft Entra ID home screen, select ID Governance.
+2.	In the left menu, select Catalogs.
+3.	On the top menu, select +New Catalog.
+4.	In the New catalog pane, in the Name box, enter Marketing.
+5.	In the Description box, enter For marketing department users. Users will see this information in an access package's details.
+6.	Select Yes for enabled for users to request and enabled for external users to request.
+7.	Select Create.
+
+
+Add resources to a catalog
+1.	On the Identity Governance screen, select Catalogs.
+2.	In the Catalogs list, select Marketing.
+3.	In the left navigation, under Manage, select Resources.
+4.	On the menu, select + Add resources.
+5.	In the Add resources to catalog screen, review the available options.
+6.	Select the Groups and Teams category then select the Marketing Security Group from that category.
+7.	Select Add.
+
+
+Add Catalog owners
+1.	In the Marketing catalog, in the left navigation menu, select Roles and administrators
+2.	On the top menu, review the available roles and then select + Add Catalog owner.
+3.	In the Select members pane, select Tre Steward and then select Select.
 
 
 
