@@ -5,7 +5,7 @@
 
 # **Managing User Roles**
 
-**Add a New User**
+**Add New User**
 1. Sign in to the Microsoft Entra admin center as a **Global Administrator**.
 
 2. In the left menu, expand **Identity**.
@@ -123,7 +123,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 4.	Select **Save** to update the tenant properties.
 
- # **Creating a Security Group**
+ # **Creating Security Group**
 
 1.	Browse the Microsoft Entra admin center screen.
 
@@ -145,7 +145,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-# **Creating a Microsoft 365 group in Microsoft Entra ID**
+# **Creating Microsoft 365 Group**
 
 1.	In the left navigation, under **Identity**, select **Groups**.
 
@@ -231,7 +231,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-# **Adding Guest Users to Directory**
+# **Adding Guest Users To Directory**
 
 1.	Select **Identity**.
 
@@ -308,7 +308,7 @@ You can see the list of permissions in the description of each role. To open, la
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20Multifactor%20Authenticaiton%20options.png)
 
 
-# **Set up Conditional Access rules for MFA**
+# **Setting Conditional Access Rules For MFA**
 
 1.	Switch back to the Azure portal and select **Microsoft Entra ID** > **Manage**>**Security** >**Protect**> **Conditional Access**.
 
@@ -342,7 +342,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-# **Configure authentication session controls**
+# **Configure Authentication Session Controls**
 
 1.	 Navigate to **Microsoft Entra ID** >**Manage**>**Security**>**Protect**> **Conditional Access**.
 
@@ -377,18 +377,39 @@ You can see the list of permissions in the description of each role. To open, la
 # **Enable FIDO2 Security Key Method**
 1.	Sign into the Microsoft Entra admin center.
 
-2.	Browse to Security > Manage > Authentication methods
+2.	Browse to **Security**>**Manage**>**Authentication methods**
 
-3.	Select the “Passkey (FIDO2)” built in method choose the following options:
-  o	Enable - Yes or No
-  o	Target - All users or Select users
+3.	Select the “**Passkey (FIDO2)**” built in method choose the following options:
+  o	**Enable** - Yes or No
+  o	**Target** - All users or Select users
 
-4.	Save the configuration.
+4.	**Save** the configuration.
 
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Administer%20FIDO2%20passkey%20settings.png)
 
 
 
+# **Manage Microsoft Entra Smart Lockout Values**
+
+1.	Navigate to Microsoft Entra ID and then select **Manage**>**Security**>**Manage**>**Authentication Methods**.
+
+3.	On Authentications methods menu, select “**Password protection**”.
+
+4.	In the Password protection settings, in the “**Lockout duration in seconds**” box, set the value to 180.
+
+5.	Next to **Mode**, select **Enforced** and save changes.
+
+
+
+
+
+
+
+Enable self-service password reset
+1.	Navigate to Microsoft Entra ID, then select “Manage”>“Password Reset” from the menu on the left side.
+2.	Select the Properties tab, under the option “Self-service password reset”, pick “Select Group”
+3.	Browse for and select SSPR-Test-Group, then choose Select.
+4.	To enable SSPR for the chosen group, select Save.
 
 
 
@@ -405,9 +426,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-
-
-# **Configuring an Identity Provider (Google)**
+# **Configuring An Identity Provider (Google)**
 
 **Step 1: Configure a Google developer project**
 
@@ -437,7 +456,7 @@ First, create a new project in the Google Developers Console to obtain a client 
 
 
 
-**Step 2: Configuring Google federation in Microsoft Entra ID**
+**Step 2: Configuring Google Federation In Microsoft Entra ID**
 
 1.	Select **External Identities**.
 
