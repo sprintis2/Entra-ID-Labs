@@ -435,7 +435,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 8.	In the Access pane, select the **Require password change** check box and then select **Done**. 
 
-
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/enable%20user%20risk%20policy.png)
 
 
 
