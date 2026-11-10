@@ -429,7 +429,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-# **Enable user risk policy**
+# **Enable User Risk Policy**
 
 1.	Sign in to the Microsoft Entra admin center using a Global administrator account.
 
@@ -451,7 +451,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-# **Enable sign-in risk policy**
+# **Enable Sign-In Risk Policy**
 
 1.	On the Identity protection blade, in the left navigation, select Dashboard and then **Sign-in risk policy**.
 
@@ -468,6 +468,31 @@ You can see the list of permissions in the description of each role. To open, la
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/sign%20in%20risk%20policy.png)
 
 
+
+# **Adding An App To Microsoft Entra Tenant**
+
+1.	Open the Entra Admin center menu and then select **Entra ID**, and then select **Enterprise applications**.
+
+2.	In the **Enterprise applications** pane, select **+ New application**.
+
+3.	In the **Browse Microsoft Entra Gallery** page, in the **Search application** box, enter **GitHub**.
+
+4.	In the results, select **GitHub Enterprise Cloud – Enterprise Account**.
+
+5.	In the **GitHub Enterprise Cloud – Enterprise Account**, review the settings and then select **Create**.
+
+
+# **Assign Users To An App**
+
+1.	On the **GitHub Enterprise Cloud – Enterprise Account** screen, on the **Overview** page, under **Getting Started**, select **Assign users and groups**. 
+
+2.	On the **Users and groups** page, on the menu, select **+Add user/group**.
+
+3.	On the **Add Assignment** dialog, select **Users and groups**.
+
+4.	In the **Users and groups** pane, select your administrator account and then **Select**.
+
+5.	Select **Assign**. 
 
 # **Configuring An Identity Provider (Google)**
 
