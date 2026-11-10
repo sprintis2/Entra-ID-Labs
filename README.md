@@ -374,12 +374,18 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
+# **Enable FIDO2 Security Key Method**
+1.	Sign into the Microsoft Entra admin center.
 
+2.	Browse to Security > Manage > Authentication methods
 
+3.	Select the “Passkey (FIDO2)” built in method choose the following options:
+  o	Enable - Yes or No
+  o	Target - All users or Select users
 
+4.	Save the configuration.
 
-
-
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Administer%20FIDO2%20passkey%20settings.png)
 
 
 
