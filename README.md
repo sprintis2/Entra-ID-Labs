@@ -249,7 +249,7 @@ You can see the list of permissions in the description of each role. To open, la
 
 
 
-**Inviting Guest Users (Bulk)**
+# **Inviting Guest Users (Bulk)**
 
 1.	In the navigation pane, select **Identity**.
 
@@ -308,7 +308,7 @@ You can see the list of permissions in the description of each role. To open, la
 ![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Configure%20Multifactor%20Authenticaiton%20options.png)
 
 
-**Set up Conditional Access rules for MFA**
+# **Set up Conditional Access rules for MFA**
 
 1.	Switch back to the Azure portal and select **Microsoft Entra ID** > **Manage**>**Security** >**Protect**> **Conditional Access**.
 
@@ -337,6 +337,69 @@ You can see the list of permissions in the description of each role. To open, la
 8.	Under “**Grant**”, select “**0 controls selected**”. Make sure that “**Grant access**” is selected. Select “**Require multifactor authentication**” and choose “**Select**”. This option enforces MFA.
 
 9.	Set Enable policy to On, then select “**Create**”
+
+![image alt](https://github.com/sprintis2/Entra-ID-Labs/blob/main/Conditional%20Access%20(setting%20grant%20access%20control).png)
+
+
+
+# **Configure authentication session controls**
+
+1.	 Navigate to **Microsoft Entra ID** >**Manage**>**Security**>**Protect**> **Conditional Access**.
+
+2.	Select “**Create new policy**” from the top menu.
+
+3.	In the Name box, enter “**Sign in frequency**”.
+
+4.	Under **Assignments**, select “**Users and groups**”.
+
+5.	On the Include tab, select the “**users and groups**” check box.
+
+6.	In the Select pane, select Admin account.
+
+7.	Select Target Resources.
+
+8.	On the Include tab, select “**Select resources**” and then “**Select Specific Resources**”
+
+9.	In the Select pane, select **Office 365**.
+
+10.	Select the Session pane, select Sign-in frequency.
+
+11.	In the value box, enter **30**.
+
+12.	Select the units menu, select **Days**.
+
+13.	Under Enable policy, select **Report-only**, and then select Create.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # **Configuring an Identity Provider (Google)**
 
